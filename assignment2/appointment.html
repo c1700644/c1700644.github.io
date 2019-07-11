@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BeYOUtiful | Appointment</title>
+    <link href="appointmentcss.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+    <header>
+        <div>BeYOUtiful</div>
+    </header>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="treatment.html">Treatment</a></li>
+            <li><a href="promotion.html">Promotion</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="appointmentlogo.jpg" alt="picture" class="appointmentlogo"/>
+        </div>
+    <div class="column">
+    <div class="appform">
+    <div class="appform_head">Make an Appointment</div>
+    <p>We will contact you shortly to confirm your Appointment Request. If we do
+            not contact you within two hours of your request, please call us.
+      </p>
+    <br>
+    <br>
+    <form action="action.php" method="POST">
+        <label for="field1"><span>Name:<span class="required">*</span></span><input type="text"
+            class="input-field" name="field1"  value="" required></label>
+        <label for="field2"><span>Contact:<span class="required">*</span></span><input type="text"
+            class="input-field" name="field2" value="" required></label>
+        <label for="field3"><span>Email:</span><input type="email"
+            class="input-field" name="field3" value=""></label>
+        <label for="field4"><span>Date:<span class="required">*</span></span><input type="date"
+            class="input-field" name="field4" value="" required></label>
+        <label for="field5"><span>Time:<span class="required">*</span></span><input type="time"
+            class="input-field" name="field5" value="" min="9:00" max="18:00" required></label>
+        <label for="field7"><span>Location:</span><select name="field7" class="select-field" required>
+            <option value="Pavilion Kual Lumpur">Pavilion Kual Lumpur</option>
+            <option value="midvalleymegamall">Mid Valley Megamall</option>
+            </select></label>
+        <label for="field6"><span>Additional Required:</span></label>
+        <textarea name="field6" class="textarea-field"></textarea>
+
+        <label><span></span><input type="submit" value="Submit"></label>
+    </form>
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <form action="/action_page.php">
+        <div class="container2" id="sub">
+            <h3>Subscribe to our Newsletter</h3>
+            <p>Subcribe with us in order to get in touch with our latest treatmeat and promotion deal/</p>
+
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="text" placeholder="Email address" name="mail" required>
+            <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+            </label>
+            <br>
+            <br>
+            <input type="submit" value="Subscribe">
+        </div>
+    </form>
+    <br>
+    <br> 
+    <footer class="footer">
+        <div class="row">
+        <!-- copyright-->
+        <div class="copyright">© 2018 Copyright:
+          <a href="home.html">BeYOUtiful.com</a>
+          </div>
+        <!--pagelink-->
+        <div class="pagelink">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Treatment</a>
+          <a href="#">Promotion</a>
+          <a href="#">Contact</a>
+          <a href="#">Appointmnet</a>
+      </div>
+      <div class="icon">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
